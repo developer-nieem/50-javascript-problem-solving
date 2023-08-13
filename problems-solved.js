@@ -45,3 +45,18 @@ console.log(classStudentsSort(students)); */
 }
 const rolls = [5,4,5,1,2,6]
 console.log(rollSort(rolls)); */
+
+
+// ========= 5. check leap Year 
+/* 
+const isLeapYear =  (year) => {
+    
+    if (year % 400 == 0 || (year / 4 == 0 && year / 100 != 0 )) {
+        console.log('is Leap year');
+    } else{
+        console.log(  'not leap year');
+    }
+   
+}
+
+isLeapYear(2001) */
