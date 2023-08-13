@@ -64,7 +64,7 @@ isLeapYear(2001) */
 
 // ========== 6  how to find how many VOWEL from a sentence ;
 
-const vowels =  ['a', 'e' , 'i', 'o', 'u' , 'A' , 'E' , 'I' , 'O' , 'U' ];
+/* const vowels =  ['a', 'e' , 'i', 'o', 'u' , 'A' , 'E' , 'I' , 'O' , 'U' ];
 
 const findVowels = (sentence) => {
 
@@ -83,4 +83,19 @@ return count
 
 }
 
-console.log(findVowels('I hate You eeeeeeeeee'));
+console.log(findVowels('I hate You eeeeeeeeee')); */
+
+
+//  =========  7. how to find duplicate number from array
+
+const numbers = [2,5,2,5,69,89,87,8,4,56,7, 8,6];
+
+const findDuplicateNumbers =  (num) => {
+    
+    const duplicatesNum =  num.filter((item , index , array) => {
+        return array.indexOf(item) !== index
+    } );
+     console.log(duplicatesNum);
+}
+
+findDuplicateNumbers(numbers)
