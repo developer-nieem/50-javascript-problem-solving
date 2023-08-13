@@ -60,3 +60,27 @@ const isLeapYear =  (year) => {
 }
 
 isLeapYear(2001) */
+
+
+// ========== 6  how to find how many VOWEL from a sentence ;
+
+const vowels =  ['a', 'e' , 'i', 'o', 'u' , 'A' , 'E' , 'I' , 'O' , 'U' ];
+
+const findVowels = (sentence) => {
+
+        let count =  0;
+    const letters =  Array.from(sentence);
+
+    for (let i = 0; i < letters.length; i++) {
+        const element = letters[i];
+       
+        if (vowels.includes(element)) {
+            count ++
+        }
+    }
+    
+return count
+
+}
+
+console.log(findVowels('I hate You eeeeeeeeee'));
