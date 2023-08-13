@@ -24,3 +24,24 @@ findLargestNum([ 500,6,48,9656,56,]) */
 }
 
 console.log(luduKhala(1 , 6));  */
+
+// ========== 3. How to sort students name Alphabetically on class students
+
+/* const classStudentsSort =  (students) => {
+    return students.sort();
+}
+
+const students =  ['Kamal', 'jamal', 'Amal'];
+console.log(classStudentsSort(students)); */
+
+// ======= 4. How to sort students roll base SL
+
+/* const rollSort = roll => {
+   const result =  roll.sort( function(a , b){
+        return a - b
+    })
+
+    return result;
+}
+const rolls = [5,4,5,1,2,6]
+console.log(rollSort(rolls)); */
