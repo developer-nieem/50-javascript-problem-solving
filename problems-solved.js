@@ -102,7 +102,7 @@ findDuplicateNumbers(numbers) */
 
 // =========  8. find how many time use "innovative"? and find first "Innovative" how many length used
 
-const sentence = ' technologies are shaping our world in innovative ways, revolutionizing industries and sparking innovative solutions to complex problems. Companies are investing in innovative research to create innovative products that cater to an innovative consumer base. The future is undeniably innovative, driven by an unyielding pursuit of innovation.'
+/* const sentence = ' technologies are shaping our world in innovative ways, revolutionizing industries and sparking innovative solutions to complex problems. Companies are investing in innovative research to create innovative products that cater to an innovative consumer base. The future is undeniably innovative, driven by an unyielding pursuit of innovation.'
 
 const matches =  sentence.match(/innovative/gi)   //"i" means case insensitive  and "g" means globally checking 
 
@@ -110,4 +110,26 @@ const matches =  sentence.match(/innovative/gi)   //"i" means case insensitive  
 
 const position = sentence.search(/innovatives/i);
 
-console.log(position >= 0 ? position : 'not found');ddd
+console.log(position >= 0 ? position : 'not found');ddd */
+
+
+// =============  9. input linierSearch(['a', 'b', 'c', 'b', 'd','c'] , 'c')
+// output 2 or not found 
+
+const inputValues = (['a', 'b', 'c', 'b', 'd','c'] , 'c');
+
+const linierSearch= (input, value) => {
+    let count = 0;
+    for (let i = 0; i < input.length; i++) {
+        const element = input[i];
+
+        if (element === value) {
+            count ++
+        }
+        
+    }
+
+    return count;
+}
+
+console.log(linierSearch(['a', 'b', 'c', 'b', 'd','c'] , 'c'));
