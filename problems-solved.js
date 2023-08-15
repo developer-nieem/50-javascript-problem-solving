@@ -110,4 +110,4 @@ const matches =  sentence.match(/innovative/gi)   //"i" means case insensitive  
 
 const position = sentence.search(/innovatives/i);
 
-console.log(position >= 0 ? position : 'not found');
+console.log(position >= 0 ? position : 'not found');ddd
