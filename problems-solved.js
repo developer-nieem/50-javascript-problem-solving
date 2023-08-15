@@ -116,7 +116,7 @@ console.log(position >= 0 ? position : 'not found');ddd */
 // =============  9. input linierSearch(['a', 'b', 'c', 'b', 'd','c'] , 'c')
 // output 2 or not found 
 
-const inputValues = (['a', 'b', 'c', 'b', 'd','c'] , 'c');
+/* const inputValues = (['a', 'b', 'c', 'b', 'd','c'] , 'c');
 
 const linierSearch= (input, value) => {
     let count = 0;
@@ -132,4 +132,23 @@ const linierSearch= (input, value) => {
     return count;
 }
 
-console.log(linierSearch(['a', 'b', 'c', 'b', 'd','c'] , 'c'));
+console.log(linierSearch(['a', 'b', 'c', 'b', 'd','c'] , 'c')); */
+
+
+// ==========  10 . How find long string in a array , and show me the index number.
+
+const longString = (arr) => {
+let longestStr = '';
+
+for (const items of arr) {
+    if (longestStr.length < items.length) {
+        longestStr = items
+    }
+    
+}
+
+return [longestStr , arr.indexOf(longestStr)]
+
+}
+
+console.log(longString(['nieem a business man' , 'subtle is company', 'keep hardworking']));
