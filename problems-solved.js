@@ -88,7 +88,7 @@ console.log(findVowels('I hate You eeeeeeeeee')); */
 
 //  =========  7. how to find duplicate number from array
 
-const numbers = [2,5,2,5,69,89,87,8,4,56,7, 8,6];
+/* const numbers = [2,5,2,5,69,89,87,8,4,56,7, 8,6];
 
 const findDuplicateNumbers =  (num) => {
     
@@ -98,4 +98,16 @@ const findDuplicateNumbers =  (num) => {
      console.log(duplicatesNum);
 }
 
-findDuplicateNumbers(numbers)
+findDuplicateNumbers(numbers) */
+
+// =========  8. find how many time use "innovative"? and find first "Innovative" how many length used
+
+const sentence = ' technologies are shaping our world in innovative ways, revolutionizing industries and sparking innovative solutions to complex problems. Companies are investing in innovative research to create innovative products that cater to an innovative consumer base. The future is undeniably innovative, driven by an unyielding pursuit of innovation.'
+
+const matches =  sentence.match(/innovative/gi)   //"i" means case insensitive  and "g" means globally checking 
+
+// console.log(matches?.length);
+
+const position = sentence.search(/innovatives/i);
+
+console.log(position >= 0 ? position : 'not found');
