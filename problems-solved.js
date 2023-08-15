@@ -137,7 +137,7 @@ console.log(linierSearch(['a', 'b', 'c', 'b', 'd','c'] , 'c')); */
 
 // ==========  10 . How find long string in a array , and show me the index number.
 
-const longString = (arr) => {
+/* const longString = (arr) => {
 let longestStr = '';
 
 for (const items of arr) {
@@ -152,3 +152,21 @@ return [longestStr , arr.indexOf(longestStr)]
 }
 
 console.log(longString(['nieem a business man' , 'subtle is company', 'keep hardworking']));
+ */
+
+// ============== 11  1-100 whats number divisible with 3,5 and 3 or 5  both
+
+
+for (let i = 1; i <= 100; i++) {
+    
+    if (i % 3 === 0 && i % 5 === 0) {
+        console.log('3 or 5 Divisible' , i);
+    }else  if (i % 3 === 0) {
+        console.log('only 3 Divisible' , i);
+    }
+    else if (i % 5 === 0) {
+        console.log('only 5 Divisible' , i);
+    }else {
+        console.log(i);
+    }
+}
