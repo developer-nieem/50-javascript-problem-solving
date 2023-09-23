@@ -173,12 +173,25 @@ console.log(longString(['nieem a business man' , 'subtle is company', 'keep hard
 
 
 
-// Write a javascript program to check two numbers and return true if one of the number is 100 or if sum of two numbers is 100
+// Write a javascript program to check two numbers and return true if one of the number is 100 or if sum of two numbers is 100 
+// JavaScript প্রোগ্রাম, যেখানে দুটি সংখ্যা পরীক্ষা করা হয় এবং যদি একটি সংখ্যা 100 হয় অথবা দুটি সংখ্যার যোগফল 100 হয় তাহলে true রিটার্ণ করে।
 
-const checkNumber = (num1 , num2) => {
+/* const checkNumber = (num1 , num2) => {
 
     const isResult = num1 == 100 || num2 == 100 || num1 + num2 === 100
     console.log(isResult);
 }
 
-checkNumber(100 , 50)
+checkNumber(100 , 50) */
+
+
+// write a program to get the extension of a file name
+ // JavaScript প্রোগ্রাম, যা ফাইলের নামের এক্সটেনশন নিতে সাহায্য করে।
+
+const getExtension = (fileName) => {
+
+    const result = fileName.slice(fileName.lastIndexOf('.'))
+    console.log(result);
+}
+
+getExtension('api.js')
