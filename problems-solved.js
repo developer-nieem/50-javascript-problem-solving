@@ -157,7 +157,7 @@ console.log(longString(['nieem a business man' , 'subtle is company', 'keep hard
 // ============== 11  1-100 whats number divisible with 3,5 and 3 or 5  both
 
 
-for (let i = 1; i <= 100; i++) {
+/* for (let i = 1; i <= 100; i++) {
     
     if (i % 3 === 0 && i % 5 === 0) {
         console.log('3 or 5 Divisible' , i);
@@ -169,4 +169,16 @@ for (let i = 1; i <= 100; i++) {
     }else {
         console.log(i);
     }
+} */
+
+
+
+// Write a javascript program to check two numbers and return true if one of the number is 100 or if sum of two numbers is 100
+
+const checkNumber = (num1 , num2) => {
+
+    const isResult = num1 == 100 || num2 == 100 || num1 + num2 === 100
+    console.log(isResult);
 }
+
+checkNumber(100 , 50)
