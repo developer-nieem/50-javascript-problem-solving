@@ -188,10 +188,44 @@ checkNumber(100 , 50) */
 // write a program to get the extension of a file name
  // JavaScript প্রোগ্রাম, যা ফাইলের নামের এক্সটেনশন নিতে সাহায্য করে।
 
-const getExtension = (fileName) => {
+/* const getExtension = (fileName) => {
 
     const result = fileName.slice(fileName.lastIndexOf('.'))
     console.log(result);
 }
 
 getExtension('api.js')
+ */
+
+
+
+// Write a javascript code to replace every character in a given string with the character following it in the alphabet 
+
+/* 
+function replaceWithNextCharacter(str) {
+ 
+
+    const result = str.split('').map(char => String.fromCharCode(char.charCodeAt(0)+1)).join('')
+    console.log(result);
+  
+  
+}
+
+replaceWithNextCharacter('abcd')
+ */
+
+
+// Write a JavaScript program to get the current date.
+// Expected Output : mm-dd-yyyy, mm/dd/yyyy or dd-mm-yyyy, dd/mm/yyyy
+
+
+const formatDate =  (date = new Date()) => {
+    
+    const days =  date.getDate() ;
+    const months = date.getMonth() + 1;
+    const year =  date.getFullYear()
+
+    console.log(`${days} - ${months} - ${year}`);
+}
+
+formatDate()
