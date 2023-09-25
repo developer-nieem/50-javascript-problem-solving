@@ -218,7 +218,7 @@ replaceWithNextCharacter('abcd')
 // Write a JavaScript program to get the current date.
 // Expected Output : mm-dd-yyyy, mm/dd/yyyy or dd-mm-yyyy, dd/mm/yyyy
 
-
+/* 
 const formatDate =  (date = new Date()) => {
     
     const days =  date.getDate() ;
@@ -229,3 +229,88 @@ const formatDate =  (date = new Date()) => {
 }
 
 formatDate()
+
+ */
+
+// Write a JavaScript program to create a new string adding "New!" in front of a given string. If the given string begins with "New!" already then return the original string.
+
+/* 
+const addText =  (text) => {
+
+    const result = text.startsWith('New!') ?  `${text}` : `New! ${text}`;
+    console.log(result);
+}
+
+addText('Hello World') */
+
+
+// Write a JavaScript program to create a new string from a given string taking the last 3 characters and added at both the front and back. The string length must be 3 or more, if not, the original string is returned.
+
+/* 
+const makeNewString =  (str) => {
+
+    const result =  str.length < 3 ? str : str.slice(0, 3) + "--" + str.slice(-3);
+    console.log(result);
+}
+
+makeNewString("abcd")
+makeNewString("abcdefcg")
+makeNewString("ab")
+
+ */
+
+
+// Write a JavaScript program to extract the first half of a string of even length.
+
+
+/* 
+const divideText =  (str) => {
+    const result =  str.slice(0 , str.length / 2);
+
+    console.log(result);
+}
+
+divideText('hello')
+divideText('melo')
+divideText('dilooooo')
+
+ */
+
+// Write a JavaScript program to concatenate two strings except their first character.
+
+/* 
+const concatenate = (str1 , str2) => {
+
+    const result =  str1.slice(1) + str2.slice(1);
+    console.log(result);
+}
+
+concatenate('hello' , 'dear')
+ */
+
+
+// Given two values, write a JavaScript program to find out which one is nearest to 100
+
+/* const findNearest100= (num1 , num2) => {
+    const result =  (100 - num1) < (100 - num2) ? num1 : num2;
+                             
+    console.log(result);
+}
+
+findNearest100(99 , 1)
+findNearest100(51 , 49)
+findNearest100(50 , 67) */
+
+
+// Write a JavaScript program to check a given string contains 2 to 4 occurrences of a specified character.
+
+const findCharLength = (str, char) => 
+str.split('').filter(ch => ch === char).length;
+
+
+const contain2To4 =  (str , char) =>  
+findCharLength(str, char) >= 2  && findCharLength(str , char) <= 4;
+
+
+console.log(contain2To4('ooh!' , 'o'));
+console.log(contain2To4('ooooooh!' , 'o'));
